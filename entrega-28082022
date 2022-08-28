@@ -1,0 +1,347 @@
+// exercício um
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in); 
+				
+		int A = input.nextInt();
+		int B = input.nextInt();
+		int X = A + B;
+		
+		System.out.println("X = " + X);
+		
+			input.close();
+	}
+}
+
+// exercicio dois
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		 Locale.setDefault(Locale.US);
+		 
+		double pi = 3.14159;
+	Scanner input = new Scanner(System.in);
+
+	double raio = input.nextDouble();
+	double area = pi * Math.pow(raio, 2);
+
+	System.out.printf("A=%.4f\n", area);
+	
+		input.close();
+	}
+}
+
+// exercicio tres
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in); 
+		
+		int A = input.nextInt();
+		int B = input.nextInt();
+		int SOMA = A + B;
+		
+		System.out.println("SOMA = " + SOMA);
+		
+			input.close();
+	}
+}
+
+// exercicio quatro
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in); 
+		
+		int A = input.nextInt();
+		int B = input.nextInt();
+		int PROD = A * B;
+		
+		System.out.println("PROD = " + PROD);
+		
+			input.close();
+	}
+}
+
+// exercicio cinco
+
+import java.util.Locale;
+import java.util.Scanner;
+ 
+public class Main {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		
+		Scanner input = new Scanner(System.in); 
+    
+    double A = input.nextDouble();
+		double B = input.nextDouble();
+		double MEDIA = ((A * 3.5) + (B * 7.5)) / 11.0;
+    
+    System.out.printf("MEDIA = %.5f\n", MEDIA);
+
+// exercicio seis
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		
+		Scanner input = new Scanner(System.in); 
+		
+		double A = input.nextDouble();
+		double B = input.nextDouble();
+		double C = input.nextDouble();
+		double MEDIA = (A * 2 + B * 3 + C * 5) / 10.0;
+		
+		System.out.printf("MEDIA = %.1f\n", MEDIA);
+	
+			input.close();
+	}
+}
+
+// exercicio sete
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		
+		Scanner input = new Scanner(System.in); 
+		
+		int A = input.nextInt();
+		int B = input.nextInt();
+		int C = input.nextInt();
+		int D = input.nextInt();
+		int DIFERENCA = (A * B - C * D);
+		
+		System.out.printf("DIFRENCA = ", DIFERENCA);
+	
+			input.close();
+	}
+}
+
+// exercicio oito
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main_ex8 {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		
+		Scanner input = new Scanner(System.in); 
+		
+		int numeroFuncionario = input.nextInt();
+		int qtdHorasTrabalhadas = input.nextInt();
+		double valorHora = input.nextDouble();
+		double salario = qtdHorasTrabalhadas * valorHora;
+		
+		System.out.println("NUMBER = " + numeroFuncionario);
+		System.out.printf("SALARY = U$ %.2f\n", salario);
+			
+			input.close();
+	}
+}
+
+// exercicio nove
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		
+		Scanner input = new Scanner(System.in); 
+		
+		String nomeFuncionario = input.next();
+	    double salarioFixo = input.nextDouble();
+		double vendasEfetuadas = input.nextDouble();
+		double comissao = vendasEfetuadas * 0.15;
+		double salarioFinal = salarioFixo + comissao;
+		
+		System.out.printf("TOTAL = %.2f\n" , salarioFinal);
+			
+			input.close();
+
+	}
+}
+
+// exercicio dez
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		
+		Scanner input = new Scanner(System.in); 
+		
+		int codePeca1 =input.nextInt();
+		int qtdPeca1 = input.nextInt();
+		double valorPeca1 = input.nextDouble();
+		int codePeca2 =input.nextInt();
+		int qtdPeca2 = input.nextInt();
+		double valorPeca2 = input.nextDouble();
+		
+		double custoTotal = qtdPeca1 * valorPeca1 + qtdPeca2 * valorPeca2;
+		
+		System.out.printf("VALOR A PAGAR: R$ %.2f\n", custoTotal);
+			
+			input.close();
+	}
+}
+
+// exercicio onze
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		
+Scanner input = new Scanner(System.in);
+		
+		double PI = 3.14159;
+		double raio = input.nextDouble();
+		double volumeEsfera = (4/3.0) * PI * Math.pow(raio, 3);
+		
+		System.out.printf("VOLUME = %.3f\n", volumeEsfera);
+		
+		input.close();
+	}
+}
+
+// exercicio doze
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in); 
+
+		double PI = 3.14159;
+		double A = input.nextDouble();
+ 		double B = input.nextDouble();
+		double C = input.nextDouble();
+		
+		double areaTrianguloRetangulo = (A * C) / 2.0;
+		double areaCirculo = PI * Math.pow(C, 2);
+		double areaTrapezio = ((A + B) * C) / 2.0;
+		double areaQuadrado = B * B;
+		double areaRetangulo = A * B;
+	
+		System.out.printf("TRIANGULO: %.3f\n", areaTrianguloRetangulo);
+		System.out.printf("CIRCULO: %.3f\n", areaCirculo);
+		System.out.printf("TRAPEZIO: %.3f\n", areaTrapezio);
+		System.out.printf("QUADRADO: %.3f\n", areaQuadrado);
+		System.out.printf("RETANGULO: %.3f\n", areaRetangulo);
+	
+		input.close();
+	}
+}
+
+
+// exercicio treze
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		
+		Scanner input = new Scanner(System.in); 
+		
+		int distanciaPercorrida = input.nextInt();
+		double qtdCombustivel = input.nextDouble();
+	
+		double mediaCombustivelGasto = distanciaPercorrida / qtdCombustivel;
+	
+		System.out.printf("%.3f km/1\n", mediaCombustivelGasto);
+	
+			input.close();
+	}
+}
+
+// exercicio catorze
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		
+		Scanner input = new Scanner(System.in); 
+		
+		int distanciaPercorrida = input.nextInt();
+		double qtdCombustivel = input.nextDouble();
+	
+		double mediaCombustivelGasto = distanciaPercorrida / qtdCombustivel;
+	
+		System.out.printf("%.3f km/1\n", mediaCombustivelGasto);
+	
+			input.close();
+	}
+}
+
+// exercicio quinze
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+Locale.setDefault(Locale.US);
+		
+		Scanner input = new Scanner(System.in); 
+
+		double x1 = input.nextDouble();		
+		double y1 = input.nextDouble();
+		double x2 = input.nextDouble();
+		double y2 = input.nextDouble();
+		
+		double distanciaXY = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
+		
+		System.out.printf("%.4f\n", distanciaXY);
+		
+				input.close();
+	}
+}
