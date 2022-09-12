@@ -1,0 +1,69 @@
+package ListaDeExercício;
+
+import javax.swing.JOptionPane;
+
+public class Questao_03 {
+
+	public static void main(String[] args) {
+
+		int mediaArit = 0;	
+		int qtdValoresPositivos = 0;
+        int qtdValoresNegativos = 0;
+        int percentualValorPositivo;
+        int percentualValorNegativo;
+        int soma = 0;
+        int cont = 0;
+        
+        int valorB=0;
+        while (valorB != (1)){
+            System.out.println("Informe um número Negativo: ");
+            valorB = Integer.parseInt(JOptionPane.showInputDialog("Informe um número Negativo: "));
+ 
+            if (valorB >= 0) {
+                soma = soma + valorB;
+                cont = cont + 1;
+ 
+                if (valorB % 2 == 0) {
+                    qtdValoresPositivos = qtdValoresNegativos + 1;
+                } else {
+                    qtdValoresPositivos = qtdValoresNegativos + 1;
+                    
+                }
+            }
+        }
+                
+        int valorA = 0;
+        while (valorA != (-1)){
+            System.out.println("Informe um número positivo: ");
+            valorA = Integer.parseInt(JOptionPane.showInputDialog("Informe um número positivo: "));
+ 
+            if (valorA >= 0) {
+                soma = soma + valorA;
+                cont = cont + 1;
+ 
+                if (valorA % 2 == 0) {
+                    qtdValoresPositivos = qtdValoresNegativos + 1;
+                } else {
+                    qtdValoresPositivos = qtdValoresNegativos + 1;
+                }
+            }
+        }
+       
+        
+        mediaArit = soma / cont;
+        
+        
+        percentualValorPositivo = qtdValoresPositivos * 100 / cont;
+        percentualValorNegativo = qtdValoresNegativos * 100 / cont;
+ 
+        System.out.println("A média aritimética é: " + mediaArit);
+ 
+        System.out.println("A quantidade de valores lidos Positivos é: " + qtdValoresPositivos);
+        System.out.println("A quantidade de valores lidos Negativos é: " + qtdValoresNegativos);
+ 
+        System.out.println("O percentual de Positivos é: " + percentualValorPositivo);
+        System.out.println("O percentual de Negativos é: " + percentualValorNegativo);
+ 
+    }
+ 
+}
