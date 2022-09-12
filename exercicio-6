@@ -1,6 +1,6 @@
-package ListaDeExercício;
+package ListaDeExercício2;
 
-public class Atividade6 {
+public class Questao_6 {
     public static void main(String[] args) {
         for (int i = 100; i < 200; i++) {
             if((i % 2) !=0){
