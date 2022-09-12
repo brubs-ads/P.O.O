@@ -1,0 +1,33 @@
+package ListaDeExercício;
+
+import java.util.Scanner;
+
+public class Questao_2 {
+    public static void main(String[] args) {
+    
+        Scanner entrada = new Scanner(System.in);
+        
+        double maior = 0;
+        double menor = 0;
+        Integer quantidade = 4;
+        Double[] altura = new Double[quantidade];
+
+        for (int i = 0; i < quantidade ; i++) {
+            System.out.print("Digite O " + (i + 1) + "º Altura e Aperte enter: ");
+            altura[i] = entrada.nextDouble();
+            maior = altura[i];
+            menor = altura[i];
+        }
+        for (int i = 0; i <quantidade ; i++) {
+
+            if (altura[i] > maior){
+                maior = altura[i];
+            }else if(altura[i]< menor){
+                menor = altura[i];
+            }
+        }
+
+        System.out.println("A maior altura informada é: " + maior);
+        System.out.println("A Menor alutra informada é: " + menor);
+    }
+}
